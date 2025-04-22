@@ -16,23 +16,22 @@ function App() {
     ctx.beginPath()
     ctx.fillStyle = 'blue '
     ctx.strokeStyle = '#000000'
-    ctx.rect(50, 50, 200, 200)
+    ctx.lineWidth = 5
+    ctx.rect(50, 50, 50, 50)
     ctx.fill()
     ctx.stroke()
     
     ctx.beginPath()
     ctx.fillStyle = 'red'
-    ctx.strokeStyle = '#000000'
-    ctx.arc(600, 150, 100, 0, Math.PI * 2, false)
+    ctx.arc(160, 80, 40, 0, Math.PI * 2, false)
     ctx.fill()
     ctx.stroke()
 
     ctx.beginPath()
     ctx.fillStyle = 'green'
-    ctx.strokeStyle = '#000000'
-    ctx.moveTo(1000, 250)
-    ctx.lineTo(1000, 70)
-    ctx.lineTo(1200, 250)
+    ctx.moveTo(240, 40)
+    ctx.lineTo(340, 140)
+    ctx.lineTo(240, 140)
     ctx.closePath()
     ctx.fill()
     ctx.stroke()
